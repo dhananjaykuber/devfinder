@@ -1,0 +1,118 @@
+.user {
+  display: flex;
+  width: fit-content;
+  margin: 10px 0px;
+  padding: 20px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 2px rgb(0 0 0 / 23%);
+  -webkit-box-shadow: 0px 0px 7px 2px rgb(0 0 0 / 23%);
+  -moz-box-shadow: 0px 0px 7px 2px rgb(0 0 0 / 23%);
+}
+
+.user img {
+  width: 130px;
+  height: 130px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-left: 20px;
+}
+
+.information .profileHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profileHeader h5 {
+  color: #535353;
+}
+
+.information h3,
+.information h4,
+.information p {
+  text-align: left;
+  color: #333333;
+}
+
+.information h3 {
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+
+.information h4 {
+  margin-top: 2px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #5e4496;
+}
+
+.information p {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.information .skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.skills span {
+  background: #ece3ff;
+  color: #2d204a;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin: 8px 3px 0px;
+}
+
+.skills span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 615px) {
+  .user {
+    margin: 10px 10px;
+    padding: 15px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 86vw;
+  }
+
+  .user img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .profileHeader h3 {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .user h4,
+  .user p {
+    text-align: center;
+  }
+
+  .information {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .skills {
+    align-items: center;
+    justify-content: center;
+  }
+}
